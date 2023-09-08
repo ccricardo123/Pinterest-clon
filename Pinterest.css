@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica;
+    font-weight: bold;
+}
+/* Header Nav */
+header 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    padding: 0px 16px;
+    position: fixed;
+    background-color: white;
+   z-index: 1;
+}
+img#Icono-Pinterest {
+    width: 35px;
+    height: 32px;
+    padding: 4px;
+}
+img #Icono-Pinterest:hover {
+    background-color: white;
+    border-radius: 150px;
+}
+.navegacion{
+    display: flex;
+}
+.navegacion a {
+    text-decoration: none;
+}
+.navegacion li {
+    list-style: none;
+    padding: 0px 12px;
+}
+.navegacion li #Inicio{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 14px 12px 14px;
+}
+.Menu{
+    display: none;
+}
+
+div .Crear{
+    display: flex;
+}
+
+.busqueda {
+    flex-grow: 1;
+    height: 48px;
+    background-color: #E9E9E9;
+    border-radius: 30px;
+}
+.busqueda:hover {
+    background-color: #e4e4e4;
+}
+.busqueda:focus-within {
+    border: 4px solid #7cbdfa;
+}
+.barra {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+#lupa {
+    padding: 10px;
+    color: #787777;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.barra input {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1 2 0;
+}
+.barra input:hover + #lupa {
+    display: none;
+}
+.social{
+    display: flex; 
+    padding: 20px 25px;
+    contain: 20px;
+    color: #767676;
+    font-size: 40px;
+    background-color: white;
+}
+.social img{
+    width: 28px;
+    row-gap: 30px;
+}
+.social img:hover {
+    background-color: #a5a5a5;
+    border-radius: 35px;
+}
+
+/* Imagenes */
+.fotos {
+    position: absolute;
+    margin-top: 80px;
+    padding-right: 5px;
+}
+.imagenes{
+   columns: 5 240px;
+   margin: auto;
+}
+.forma-de-imagen {
+    position: relative;
+    padding: 6px;
+    
+}
+.forma-de-imagen img{
+    border-radius: 10%;
+    min-width: 240px;
+    max-width: 240px;
+}
+.forma-de-imagen:hover > :first-child {
+    filter: brightness(65%);
+}
+.forma-de-imagen:hover * {
+    visibility: visible;
+    display: inline;
+}
+.boton {
+    position: absolute;
+    left: 55%;
+    top: 5%; 
+    background-color: red;  
+    padding: 15px 20px; 
+    border-radius: 30px;
+    border: none;
+    visibility: hidden;
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", ;
+}
+.upload {
+    position: absolute;
+    left: 60%;
+    bottom: 8%;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+
+}    
+.Mas-opciones {
+    position: absolute;
+    left: 78%;
+    bottom: 8%;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+
+#pregunta{ 
+    position: fixed;
+    background-color:#c1c1c1;
+    top: 86%;
+    left: 94%;
+    padding: 14px;
+    font-weight: bolder;
+    border-radius: 40px;
+    color: black;
+}
